@@ -7,7 +7,7 @@ function TabButton(props) {
   // console.log(props);
   return (
     <li>
-      <button onClick={props.onClick}>{props.children}</button>
+      <button className={props.isSelected?"active":null} onClick={props.onClick}>{props.children}</button>
     </li>
   );
 }
