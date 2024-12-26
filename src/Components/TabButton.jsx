@@ -1,13 +1,13 @@
 import React from "react";
 
-function TabButton({children,...props}) {
+function TabButton({children,isSelected,...props}) {
   function TabButtonHandler(){
     console.log('Hello World!');
   }
   // console.log(props);
   return (
     <li>
-      <button className={props.isSelected?"active":null} {...props}>{children}</button>
+      <button className={isSelected?"active":null} {...props}>{children}</button>
     </li>
   );
 }
